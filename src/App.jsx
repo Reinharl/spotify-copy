@@ -1,11 +1,18 @@
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
     return (
-        <>
-            <h1 className="text-3xl">Hello World!</h1>
-        </>
+        <div>
+            <Router>
+                <Routes>
+                   <Route> </Route> 
+                </Routes>
+                <Footer></Footer>
+            </Router>
+        </div>
     )
 }
 
