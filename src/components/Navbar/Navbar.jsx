@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 function Navbar() {
 
-    return <div className="flex justify-between items-center h-16 pl-10 bg-[#0f0f0f] rounded-t-xl">
+    return <div className="flex justify-between items-center h-16 pl-10 bg-[#0f0f0f] rounded-t-xl mt-2 mr-2">
         <div className="flex items-center gap-4">
             <div className="flex items-center gap-4 "  > 
             <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" className="bg-black rounded-full p-1 cursor-not-allowed " viewBox="0 0 320 512"><path fill="#868686" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>

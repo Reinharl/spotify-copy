@@ -3,7 +3,7 @@ import SpotifyLogo from "../../images/spotify-white-logo.png";
 function Sidebar() {
 
     return (
-        <aside className={"fixed top-0 left-0 bg-nero text-griginoBg max-w-[420px] min-w-[280px] p-2 h-screen"}>
+        <aside className={" bg-nero text-grigioTesto  p-2 h-screen"}>
             {/* Spotify barra di ricerca */}
             <div className={"bg-grigioBg mb-2 p-6 rounded-lg"}>
                 <ul className={"flex flex-col space-y-4"}>
@@ -13,19 +13,19 @@ function Sidebar() {
                         </a>
                     </li>
                     <li>
-                        <a className={"flex flex-row space-x-5 hover:text-biancoTesto duration-200 ease-in-out"}>
+                        <a className={"flex flex-row space-x-5 hover:text-biancoTesto duration-200 ease-in-out cursor-pointer"}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                                  stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round"
                                       d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/>
                             </svg>
-                            <h3 className={"font-bold"}>
+                            <h3 className={"font-bold "}>
                                 Home
                             </h3>
                         </a>
                     </li>
                     <li>
-                        <a className={"flex flex-row space-x-5 hover:text-biancoTesto duration-200 ease-in-out"}>
+                        <a className={"flex flex-row space-x-5 hover:text-biancoTesto duration-200 ease-in-out cursor-pointer"}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                                  stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round"
@@ -39,11 +39,11 @@ function Sidebar() {
                 </ul>
             </div>
             {/* Libreria */}
-            <div className={"bg-grigioBg p-2 rounded-lg flex flex-col justify-between h-[calc(100vh-178.583px)] overflow-scroll"}>
+            <div className={"bg-grigioBg p-2 rounded-lg flex flex-col justify-between h-[calc(100vh-178.583px)] overflow-y-scroll"}>
                 <div>
                     {/* Barra */}
                     <div className={"flex flex-row justify-between items-center mx-4 mb-6"}>
-                        <a className={"flex flex-row space-x-2.5 hover:text-biancoTesto duration-200 ease-in-out"}>
+                        <a className={"flex flex-row space-x-2.5 hover:text-biancoTesto duration-200 ease-in-out cursor-pointer"}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                                  stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round"
