@@ -1,10 +1,11 @@
 import './App.css'
+import Sidebar from "./components/Sidebar/Sidebar.jsx";
 
 function App() {
 
     return (
         <>
-            <h1 className="text-3xl">Hello World!</h1>
+            <Sidebar></Sidebar>
         </>
     )
 }
