@@ -1,11 +1,10 @@
+/* eslint-disable no-unused-vars */
 import './App.css'
-import Sidebar from "./components/Sidebar/Sidebar.jsx";
 
 function App() {
 
     return (
         <>
-            <Sidebar></Sidebar>
         </>
     )
 }
