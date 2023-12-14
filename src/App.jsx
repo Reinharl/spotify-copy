@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Search from "./pages/Search";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
             <Navbar />
 
             <Routes>
-              <Route></Route>
+              <Route path="/Search" element={<Search />} />
             </Routes>
             <Footer />
           </div>
