@@ -4,20 +4,21 @@
 
 Tutti gli elementi che costituiranno la pagina saranno dentro components:
 
-* FocusCard
-* Navbar
-* Sidebar
-* Footer
-* SearchCard
+- FocusCard
+- Navbar
+- Sidebar
+- Footer
+- SearchCard
 
 Immagini delle card ed eventuali altre all'interno della cartella images.
 
 Import all'inizio del codice del component
 L'interno del component è cosi strutturato:
-* Funzioni
-* Costanti e Stati
-* useEffect
-* return
+
+- Funzioni
+- Costanti e Stati
+- useEffect
+- return
 
 Export alla fine.
 
@@ -27,15 +28,26 @@ Export alla fine.
 
 ## Milestones
 
-1. Francesco e Rodolfo si occupano della *Sidebar*, 
-Mario e Vittorio si occupano della *Navbar*, 
-Gabriele si occupa del *Footer*;
+1. Francesco e Rodolfo si occupano della _Sidebar_,
+   Mario e Vittorio si occupano della _Navbar_,
+   Gabriele si occupa del _Footer_;
 2. Impostiamo la pagina home e search tutti insieme;
 3. Costruiamo le card focus e search;
 
 ## GitHub
 
-* Fare il clone della repo: git clone https://github.com/Reinharl/spotify-copy.git
-* Creare il proprio branch con: git branch (il tuo nome)
-* Prima di pushare il codice fare: git pull
-* E infine fare il push con: git push
+- Fare il clone della repo: git clone https://github.com/Reinharl/spotify-copy.git
+- Creare il proprio branch con: git branch (il tuo nome)
+- Prima di pushare il codice fare: git pull
+- E infine fare il push con: git push
+
+<!-- ## Colors
+
+        grigioTesto: "#868686",
+        biancoTesto: "#f6f6f6",
+        nero: "#000000",
+        grigioBg: "#121212",
+        griginoBg: "#242424",
+        verdeSpotify: "#1fdf64",
+
+![alt text](src/images/color_rules.png?raw=true) -->
