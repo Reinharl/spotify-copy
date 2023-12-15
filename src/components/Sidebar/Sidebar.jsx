@@ -2,6 +2,7 @@ import SpotifyLogo from "../../images/spotify-white-logo.png";
 
 function Sidebar() {
   return (
+    
     <aside
       className={"hidden md:block bg-nero text-grigioTesto p-2 pr-0 h-screen"}
     >

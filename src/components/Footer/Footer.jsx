@@ -6,6 +6,7 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
+    
     <footer className="flex md:justify-end">
       {/*contenitore di tutto il footer */}
       <div className=" w-screen  md:h-[353px] flex  flex-col   md:p-2  bg-grigioBg text-grigioTesto md:rounded-b-md">
