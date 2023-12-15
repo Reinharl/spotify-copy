@@ -6,20 +6,22 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Sidebar from "./components/Sidebar/Sidebar";
 import FocusCard from "./components/FocusCard/FocusCard";
+import Search from "./pages/Search";
 
 function App() {
   return (
     <>
       <Router>
-        <div className="flex gap-1 bg-black">
+        <div className="flex gap-1 bg-black ">
           <Sidebar />
-          <div className="flex flex-col md:w-[80%]">
+          <div className="flex flex-col w-[80%]">
             <Navbar />
 
-            <Routes>
-              <Route></Route>
-            </Routes>
-            <FocusCard />
+              <Routes>
+                <Route path="/search" element={<Search />} />
+              </Routes>
+
+              <FocusCard />
             <Footer />
           </div>
         </div>
