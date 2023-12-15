@@ -6,9 +6,9 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
-    <div className="flex justify-end mr-2">
+    <footer className="flex justify-end">
       {/*contenitore di tutto il footer */}
-      <div className="w-screen  h-[353px] flex  flex-col   p-2  bg-grigioBg text-grigioTesto ">
+      <div className="w-screen  h-[353px] flex  flex-col   p-2  bg-grigioBg text-grigioTesto rounded-b-md">
         {/* contenitore parte1 dell footer */}
         <div className="flex justify-between  px-5 py-2">
           {/* azienda community link utili */}
@@ -83,7 +83,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

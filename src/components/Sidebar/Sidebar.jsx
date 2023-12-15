@@ -3,9 +3,9 @@ import SpotifyLogo from "../../images/spotify-white-logo.png";
 function Sidebar() {
 
     return (
-        <aside className={" bg-nero text-grigioTesto  p-2 h-screen"}>
+        <aside className={" bg-nero text-grigioTesto py-2 pl-2 h-screen"}>
             {/* Spotify barra di ricerca */}
-            <div className={"bg-grigioBg mb-2 p-6 rounded-lg"}>
+            <div className={"bg-grigioBg mb-2 p-6 rounded-md"}>
                 <ul className={"flex flex-col space-y-4"}>
                     <li>
                         <a>
@@ -39,7 +39,7 @@ function Sidebar() {
                 </ul>
             </div>
             {/* Libreria */}
-            <div className={"bg-grigioBg p-2 rounded-lg flex flex-col justify-between h-[calc(100vh-178.583px)] overflow-y-scroll"}>
+            <div className={"bg-grigioBg p-2 rounded-md flex flex-col justify-between h-[calc(100vh-178.583px)]"}>
                 <div>
                     {/* Barra */}
                     <div className={"flex flex-row justify-between items-center mx-4 mb-6"}>
@@ -60,7 +60,7 @@ function Sidebar() {
                     {/* Contenuto */}
                     <div className={"space-y-6 overflow-x-hidden"}>
                         {/* Card crea playlist */}
-                        <div className={"bg-griginoBg text-biancoTesto rounded-lg py-4 px-5"}>
+                        <div className={"bg-griginoBg text-biancoTesto rounded-md py-4 px-5"}>
                             <h4 className={"font-bold mb-1"}>
                                 Crea la tua prima playlist
                             </h4>
@@ -72,7 +72,7 @@ function Sidebar() {
                             </button>
                         </div>
                         {/* Card cerca podcast */}
-                        <div className={"bg-griginoBg text-biancoTesto rounded-lg py-4 px-5"}>
+                        <div className={"bg-griginoBg text-biancoTesto rounded-md py-4 px-5"}>
                             <h4 className={"font-bold mb-1"}>
                                 Cerca qualche podcast da seguire
                             </h4>
@@ -88,7 +88,7 @@ function Sidebar() {
                 {/* Footer */}
                 <div className={"space-y-2"}>
                     {/* Link */}
-                    <ul className={"text-xs flex flex-row flex-wrap gap-x-2 gap-y-3 px-3 py-6"}>
+                    <ul className={"text-xs flex flex-row flex-wrap gap-x-2 gap-y-3 px-3 pt-6"}>
                         <li>
                             <a>
                                 Informazioni legali
@@ -119,8 +119,10 @@ function Sidebar() {
                                 Accessibilità
                             </a>
                         </li>
+                    </ul>
+                    <ul className={"text-xs pt-1 px-3 pb-6"}>
                         <li>
-                            <a>
+                            <a className={"hover:underline"}>
                                 Politica sui cookie
                             </a>
                         </li>
@@ -128,7 +130,7 @@ function Sidebar() {
                     {/* Bottone lingua */}
                     <div className={"px-3 pb-6"}>
                         <button
-                            className={"text-biancoTesto flex flex-row gap-1 rounded-full ring-1 ring-biancoTesto px-2 py-1 hover:scale-105 duration-250 ease-in-out"}>
+                            className={"text-biancoTesto flex flex-row gap-1 rounded-full ring-2 ring-griginoBg px-2 py-1 hover:scale-105 hover:ring-biancoTesto duration-250 ease-in-out"}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                  className="w-6 h-6">
                                 <path
