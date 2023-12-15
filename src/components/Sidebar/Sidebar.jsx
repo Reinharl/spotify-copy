@@ -162,7 +162,7 @@ function Sidebar() {
           {/* Link */}
           <ul
             className={
-              "text-xs flex flex-row flex-wrap gap-x-2 gap-y-3 px-3 pt-6"
+              "text-[9px] flex flex-row flex-wrap gap-x-2 gap-y-3 px-3 pt-6"
             }
           >
             <li>
@@ -184,7 +184,7 @@ function Sidebar() {
               <a className=" cursor-pointer">Accessibilità</a>
             </li>
           </ul>
-          <ul className={"text-xs pt-1 px-3 pb-6"}>
+          <ul className={"text-[9px] pt-1 px-3 pb-6"}>
             <li>
               <a className={"hover:underline cursor-pointer"}>Politica sui cookie</a>
             </li>
