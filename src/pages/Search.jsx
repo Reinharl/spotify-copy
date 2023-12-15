@@ -6,15 +6,15 @@ import Footer from "../components/Footer/Footer.jsx";
 
 function Search() {
     return (
-        <div className="flex bg-black">
+        <div className="flex bg-black h-screen">
             <Sidebar/>
-            <div className="flex flex-col md:w-[77%] md:p-2">
-                <Navbar/>
-                <div className="flex-1 overflow-y-auto mr-2">
+            <div className="flex flex-col md:w-[78%] md:p-2">
+                <div className="flex-1 overflow-y-auto mr-2 rounded-t-md">
                     {/* Il resto del tuo componente SearchCard o altre cose qui */}
+                    <Navbar/>
                     <SearchCard/>
+                    <Footer/>
                 </div>
-                <Footer/>
             </div>
         </div>
     );

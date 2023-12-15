@@ -44,7 +44,7 @@ function SearchCard() {
             {titolo}
           </div>
           <div className="absolute bottom-[-20px] right-[-15px]">
-            <img src={immagine} className="w-[5vw] rotate-[45deg]"/>
+            <img src={immagine} className="w-32 rotate-[45deg]"/>
           </div>
           {/* {console.log(`carta ${i+1} , titolo: ${titolo}, colore: ${colore}, immagine: &{immagine}`)};   */} {/* funzionante */}
         </div>
@@ -53,11 +53,11 @@ function SearchCard() {
       componenti.push(componente)
     }
     return (
-      <div className="bg-grigioBg  ">
+      <div className="bg-grigioBg mt-16">
         <h1 className="text-biancoTesto text-[40px] font-bold p-5">
           Sfoglia tutto
         </h1>
-        <div className="flex gap-[10px] flex-wrap " >{componenti}</div>
+        <div className="flex gap-[10px] flex-wrap p-4" >{componenti}</div>
       </div>
     );
   }

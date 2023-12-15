@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     
-    <header className=" bg-nero flex justify-between items-center h-16 px-4 md:px-6 md:pl-10  md:pr-0 md:bg-[#0f0f0f] md:rounded-t-md ">
+    <header className="fixed z-10 w-[77%] bg-nero flex justify-between items-center h-16 px-4 md:px-6 md:pl-10  md:pr-0 md:bg-[#0f0f0f] md:rounded-t-md ">
       <img src={SpotifyLogo} alt="Spotify-logo" className="md:hidden h-12" />
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-4 ">
