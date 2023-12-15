@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import Sidebar from "../components/Sidebar/Sidebar.jsx";
+import FocusCard from "../components/FocusCard/FocusCard.jsx";
 
 function Home() {
     return (
@@ -10,6 +11,7 @@ function Home() {
                 <div className="flex-1 overflow-y-auto mr-2 rounded-t-md">
                     {/* Il resto del tuo componente SearchCard o altre cose qui */}
                     <Navbar/>
+                    <FocusCard/>
                     <Footer/>
                 </div>
             </div>

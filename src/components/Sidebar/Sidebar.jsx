@@ -1,4 +1,5 @@
 import SpotifyLogo from "../../images/spotify-white-logo.png";
+import {Link} from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -19,7 +20,7 @@ function Sidebar() {
             </a>
           </li>
           <li>
-            <a
+            <Link to={"/"}
               className={
                 "flex flex-row space-x-5 hover:text-biancoTesto duration-200 ease-in-out cursor-pointer"
               }
@@ -39,10 +40,10 @@ function Sidebar() {
                 />
               </svg>
               <h3 className={"font-bold "}>Home</h3>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link to={"/search"}
               className={
                 "flex flex-row space-x-5 hover:text-biancoTesto duration-200 ease-in-out cursor-pointer"
               }
@@ -62,7 +63,7 @@ function Sidebar() {
                 />
               </svg>
               <h3 className={"font-bold"}>Cerca</h3>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
