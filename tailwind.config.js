@@ -9,6 +9,7 @@ export default {
         nero: "#000000",
         grigioBg: "#121212",
         griginoBg: "#242424",
+        grigioHover: "#727272",
         verdeSpotify: "#1fdf64",
       },
     },

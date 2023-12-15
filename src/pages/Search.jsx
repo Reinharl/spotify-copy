@@ -1,10 +1,13 @@
 /* eslint-disable no-unused-vars */
-function Search(){
-    return (
-        <div>
-            <h1>Search</h1>
-        </div>
-    )
-}
+import SearchCard from "../components/SearchCard/SearchCard";
 
-export default Search;
+function Search() {
+    return (
+      <div className="flex-1 overflow-y-auto mr-2">
+        {/* Il resto del tuo componente SearchCard o altre cose qui */}
+        <SearchCard />
+      </div>
+    );
+  }
+  
+  export default Search;
