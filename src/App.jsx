@@ -12,7 +12,7 @@ function App() {
       <Router>
         <div className="flex gap-1 bg-black">
           <Sidebar />
-          <div className="flex flex-col w-[80%]">
+          <div className="flex flex-col md:w-[80%]">
             <Navbar />
 
             <Routes>
