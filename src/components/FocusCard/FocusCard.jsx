@@ -17,7 +17,7 @@
 function FocusCard() {
   return (
     <>
-      <div className="bg-gradient-to-b from-[#303030] to-[#121212] h-screen">
+      <div className="bg-gradient-to-b from-[#303030] to-[#121212] h-screen mt-16">
         {/*____________TITLE BOX ____________ */}
 
         <div className="flex justify-between p-2">

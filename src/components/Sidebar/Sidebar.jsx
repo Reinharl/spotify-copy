@@ -1,4 +1,5 @@
 import SpotifyLogo from "../../images/spotify-white-logo.png";
+import {Link} from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -19,7 +20,7 @@ function Sidebar() {
             </a>
           </li>
           <li>
-            <a
+            <Link to={"/"}
               className={
                 "flex flex-row space-x-5 hover:text-biancoTesto duration-200 ease-in-out cursor-pointer"
               }
@@ -39,10 +40,10 @@ function Sidebar() {
                 />
               </svg>
               <h3 className={"font-bold "}>Home</h3>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link to={"/search"}
               className={
                 "flex flex-row space-x-5 hover:text-biancoTesto duration-200 ease-in-out cursor-pointer"
               }
@@ -62,7 +63,7 @@ function Sidebar() {
                 />
               </svg>
               <h3 className={"font-bold"}>Cerca</h3>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -162,7 +163,7 @@ function Sidebar() {
           {/* Link */}
           <ul
             className={
-              "text-xs flex flex-row flex-wrap gap-x-2 gap-y-3 px-3 pt-6"
+              "text-[9px] flex flex-row flex-wrap gap-x-2 gap-y-3 px-3 pt-6"
             }
           >
             <li>
@@ -184,7 +185,7 @@ function Sidebar() {
               <a className=" cursor-pointer">Accessibilità</a>
             </li>
           </ul>
-          <ul className={"text-xs pt-1 px-3 pb-6"}>
+          <ul className={"text-[9px] pt-1 px-3 pb-6"}>
             <li>
               <a className={"hover:underline cursor-pointer"}>Politica sui cookie</a>
             </li>
