@@ -4,7 +4,6 @@ import Footer from "../components/Footer/Footer.jsx";
 
 function Home() {
     return (
-        
         <div className="flex bg-black">
             <Sidebar/>
             <div className="flex flex-col md:w-[77%] md:p-2">
