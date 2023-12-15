@@ -6,11 +6,12 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
-    <div className="flex md:justify-end mr-2">
+    
+    <footer className="flex md:justify-end">
       {/*contenitore di tutto il footer */}
-      <div className=" w-screen  md:h-[353px] flex  flex-col   p-2  bg-grigioBg text-grigioTesto ">
+      <div className=" w-screen  md:h-[353px] flex  flex-col   md:p-2  bg-grigioBg text-grigioTesto md:rounded-b-md">
         {/* contenitore parte1 dell footer */}
-        <div className="gap-6 md:gap-0 flex flex-col md:flex-row justify-between  px-5 py-2">
+        <div className="gap-6 md:gap-0 flex flex-col md:flex-row md:flex-wrap justify-between px-4 md:px-5 py-2">
           {/* azienda community link utili */}
           <div className="flex flex-col gap-6 md:gap-0 md:flex-row">
             <div className="pr-20">
@@ -18,14 +19,14 @@ function Footer() {
                 Azienda
               </h2>
               <ul className="flex flex-col">
-                <Link className="pb-[5px] hover:text-biancoTesto ">
+                <Link className="pb-[5px] hover:text-biancoTesto hover:underline">
                   Chi siamo
                 </Link>
-                <Link className="pb-[5px] hover:text-biancoTesto">
+                <Link className="pb-[5px] hover:text-biancoTesto hover:underline">
                   {" "}
                   Opportunità di lavoro
                 </Link>
-                <Link className="pb-[5px] hover:text-biancoTesto">
+                <Link className="pb-[5px] hover:text-biancoTesto hover:underline">
                   For the Record
                 </Link>
               </ul>
@@ -36,19 +37,19 @@ function Footer() {
                 Community
               </h2>
               <ul className="flex flex-col">
-                <Link className="pb-[5px] hover:text-biancoTesto">
+                <Link className="pb-[5px] hover:text-biancoTesto hover:underline">
                   Per artisti
                 </Link>
-                <Link className="pb-[5px] hover:text-biancoTesto">
+                <Link className="pb-[5px] hover:text-biancoTesto hover:underline">
                   Sviluppatori
                 </Link>
-                <Link className="pb-[5px] hover:text-biancoTesto">
+                <Link className="pb-[5px] hover:text-biancoTesto hover:underline">
                   Pubblicità
                 </Link>
-                <Link className="pb-[5px] hover:text-biancoTesto">
+                <Link className="pb-[5px] hover:text-biancoTesto hover:underline">
                   Investitori
                 </Link>
-                <Link className="pb-[5px] hover:text-biancoTesto">
+                <Link className="pb-[5px] hover:text-biancoTesto hover:underline">
                   Venditori
                 </Link>
               </ul>
@@ -57,13 +58,13 @@ function Footer() {
             <div>
               <h2 className="text-[20px] text-biancoTesto pb-[5px]">Link</h2>
               <ul className="flex flex-col ">
-                <Link className="pb-[5px] hover:text-biancoTesto">
+                <Link className="pb-[5px] hover:text-biancoTesto hover:underline">
                   Assistenza
                 </Link>
-                <Link className="pb-[5px] hover:text-biancoTesto">
+                <Link className="pb-[5px] hover:text-biancoTesto hover:underline">
                   App per cellulare gratuita
                 </Link>
-                <Link className="pb-[5px] hover:text-biancoTesto">
+                <Link className="pb-[5px] hover:text-biancoTesto hover:underline">
                   Diritti del consumatore
                 </Link>
               </ul>
@@ -72,7 +73,7 @@ function Footer() {
           {/*icone */}
           <div>
             <ul className="flex">
-              <Link className="bg-griginoBg w-[40px] h-[40px] rounded-full mr-[10px] flex items-center justify-center">
+              <Link className="bg-griginoBg w-[40px] h-[40px] rounded-full mr-[10px] flex items-center justify-center hover:bg-grigioHover">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className=""
@@ -80,14 +81,14 @@ function Footer() {
                 />
               </Link>
 
-              <Link className="bg-griginoBg w-[40px] h-[40px] rounded-full  mr-[10px] flex items-center justify-center">
+              <Link className="bg-griginoBg w-[40px] h-[40px] rounded-full  mr-[10px] flex items-center justify-center hover:bg-grigioHover">
                 <FontAwesomeIcon
                   icon={faTwitter}
                   className=" "
                   style={{ color: "#f6f6f6" }}
                 />
               </Link>
-              <Link className="bg-griginoBg w-[40px] h-[40px] rounded-full  mr-[10px] flex items-center justify-center">
+              <Link className="bg-griginoBg w-[40px] h-[40px] rounded-full  mr-[10px] flex items-center justify-center hover:bg-grigioHover">
                 <FontAwesomeIcon
                   icon={faFacebook}
                   className=""
@@ -97,6 +98,7 @@ function Footer() {
             </ul>
           </div>
         </div>
+
         <div className="mb-10 mt-6 md:mt-0">
           <div className="h-[1px] bg-grigioTesto "> </div>
           <div className="flex justify-start  px-5 py-2">
@@ -154,7 +156,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

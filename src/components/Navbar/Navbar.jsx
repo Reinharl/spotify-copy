@@ -5,7 +5,8 @@ function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex justify-between items-center h-16 pl-6 md:pl-10 pr-6 md:pr-0 bg-[#0f0f0f] rounded-t-xl mt-2 mr-2">
+    
+    <header className=" bg-nero flex justify-between items-center h-16 px-4 md:px-6 md:pl-10  md:pr-0 md:bg-[#0f0f0f] md:rounded-t-md ">
       <img src={SpotifyLogo} alt="Spotify-logo" className="md:hidden h-12" />
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-4 ">
@@ -62,58 +63,77 @@ function Navbar() {
         </button>
       </div>
 
-    <div className="md:hidden">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className=" md:hidden w-8 h-8 cursor-pointer transform transition duration-500 text-[#ffffff]
-              hover:scale-110 "
-        onClick={() => setIsNavOpen((prev) => !prev)}
-      >
-        <path
-          fill-rule="evenodd"
-          d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-          clip-rule="evenodd"
-        />
-      </svg>
-
-      <div className={isNavOpen ? "showMenuNav text-biancoTesto" : "hideMenuNav"} >
-        <div
-          className=" absolute top-0 right-0 px-8 py-8 "
-          onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
+      <div className="flex items-center space-x-4 md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="w-6 h-6 text-biancoTesto"
         >
-          <svg
-            className="cursor-pointer transform transition duration-500 
-                hover:scale-110 text-biancoTesto "
-            viewBox="0 0 24 24"
-            height="32"
-            width="32"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
+          <path
             strokeLinecap="round"
             strokeLinejoin="round"
-          >
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        </div>
-        <ul className=" mt-10 flex flex-col pl-4 min-h-[250px]">
-          <li
-            className=""
-          >
-            prova 1
-          </li>
-          <li
-            className=""
-          >
-            prova 2
-          </li>
-        </ul>
-      </div>
+            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+          />
+        </svg>
 
-    </div>
+        <button className="bg-white text-black rounded-3xl px-7 py-2 hover:scale-105 uppercase font-bold text-lg">
+          Apri l&apos;App
+        </button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          className=" md:hidden w-8 h-8 cursor-pointer transform transition duration-500 text-[#ffffff]
+              hover:scale-110 "
+          onClick={() => setIsNavOpen((prev) => !prev)}
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
+        <div
+          className={isNavOpen ? "showMenuNav text-biancoTesto ml-0" : "hideMenuNav"}
+        >
+          <div
+            className=" absolute top-0 right-0 px-8 py-8 "
+            onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
+          >
+            <svg
+              className="cursor-pointer transform transition duration-500 
+                hover:scale-110 text-biancoTesto "
+              viewBox="0 0 24 24"
+              height="32"
+              width="32"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </div>
+          <ul className=" mt-10 flex flex-col text-2xl font-bold  space-y-6">
+            <li className="">Accedi</li>
+            <li className="">Iscriviti</li>
+          </ul>
+          <div className=" text-2xl py-6">-</div>
+          <ul className="space-y-1 font-bold ">
+            <li>Premium</li>
+            <li>Assistenza</li>
+            <li>Scarica</li>
+            <li>Privacy</li>
+            <li>Condizioni</li>
+          </ul>
+        </div>
+      </div>
 
       <style>{`
       .hideMenuNav {
@@ -124,15 +144,16 @@ function Navbar() {
         position: absolute;
         width: 100%;
         height: 100vh;
+        padding: 32px;
         top: 0;
-        left: 0;
+        left: -16px;
         background: black;
         z-index: 10;
         display: flex;
         flex-direction: column;
       }
     `}</style>
-    </div>
+    </header>
   );
 }
 
