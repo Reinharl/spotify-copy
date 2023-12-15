@@ -5,7 +5,7 @@ function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex justify-between items-center h-16 pl-6 md:pl-10 pr-6 md:pr-0 bg-[#0f0f0f] rounded-t-xl mt-2 mr-2">
+    <header className="flex justify-between items-center h-16 pl-6 md:pl-10 pr-6 md:pr-0 bg-[#0f0f0f] rounded-t-xl mt-2 mr-2">
       <img src={SpotifyLogo} alt="Spotify-logo" className="md:hidden h-12" />
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-4 ">
@@ -113,7 +113,7 @@ function Navbar() {
         </ul>
       </div>
 
-    </div>
+    </header>
 
       <style>{`
       .hideMenuNav {
