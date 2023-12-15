@@ -3,7 +3,7 @@ import SpotifyLogo from "../../images/spotify-white-logo.png";
 function Sidebar() {
 
     return (
-        <aside className={" bg-nero text-grigioTesto py-2 pl-2 h-screen"}>
+        <aside className={"hidden md:block bg-nero text-grigioTesto  p-2 h-screen"}>
             {/* Spotify barra di ricerca */}
             <div className={"bg-grigioBg mb-2 p-6 rounded-md"}>
                 <ul className={"flex flex-col space-y-4"}>
@@ -39,7 +39,7 @@ function Sidebar() {
                 </ul>
             </div>
             {/* Libreria */}
-            <div className={"bg-grigioBg p-2 rounded-md flex flex-col justify-between h-[calc(100vh-178.583px)]"}>
+            <div className={"hidden md:flex bg-grigioBg p-2 rounded-lg flex-col justify-between h-[calc(100vh-178.583px)] overflow-y-scroll"}>
                 <div>
                     {/* Barra */}
                     <div className={"flex flex-row justify-between items-center mx-4 mb-6"}>
@@ -86,7 +86,7 @@ function Sidebar() {
                     </div>
                 </div>
                 {/* Footer */}
-                <div className={"space-y-2"}>
+                <div className={"space-y-2 "}>
                     {/* Link */}
                     <ul className={"text-xs flex flex-row flex-wrap gap-x-2 gap-y-3 px-3 pt-6"}>
                         <li>

@@ -6,7 +6,7 @@ import Home from "./pages/Home.jsx";
 import Search from "./pages/Search.jsx";
 
 function App() {
-
+  
     const router = createBrowserRouter([
         {path: "/", element: <Home/>},
         {path: "/search", element: <Search/>}
