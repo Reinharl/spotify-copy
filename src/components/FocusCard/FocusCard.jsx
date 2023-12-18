@@ -10,27 +10,29 @@ function FocusCard() {
     <>
       {/*____________CONTAINER ____________ */}
       <div
-        id="container"
+        id="container overflow-y-scroll  h-screen"
         className="bg-gradient-to-b from-[#303030] to-[#121212]"
       >
         {/*____________TITLE BOX ____________ */}
-        <div className="mt-16 flex justify-between p-2">
-          <h1 className="text-white font-bold">Playlist Spotify</h1>
+        <div className="mt-16 flex justify-between p-4">
+          <h1 className="text-white font-bold md:text-lg lg:text-3xl">
+            Top 10 Songs Spotify
+          </h1>
           {/*    <h2 className="text-grigioTesto text-sm font-bold cursor-pointer">
           Mostra tutto
         </h2> */}
         </div>
-        <div className="flex flex-wrap overflow-y-scroll  h-screen ">
+        <div className="flex flex-wrap  ">
           {/*  MAPPATURA  */}
           {canzoni.map((item, index) => {
             console.log("prima del return");
             return (
               <div
                 key={index}
-                className="w-[170px] h-[250px] bg-griginoBg hover:bg-[#404040] group duration-300 ease-in-out rounded-lg p-3 flex flex-col gap-1 cursor-pointer m-2"
+                className="w-[170px] h-[235px] bg-griginoBg hover:bg-[#404040] group duration-300 ease-in-out rounded-lg p-3 flex flex-col gap-1 cursor-pointer m-2 md:my-10 md:mx-8 md:scale-125"
               >
                 {/*____________CARD BOX ____________ */}
-                <div className=" ">
+                <div>
                   <a
                     href={item.external_urls.spotify}
                     target="_blank"
