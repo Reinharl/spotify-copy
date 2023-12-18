@@ -10,6 +10,13 @@ Tutti gli elementi che costituiranno la pagina saranno dentro components:
 - Footer
 - SearchCard
 
+e le pagine:
+
+- Home
+- Search
+- Error
+- Form
+
 Immagini delle card ed eventuali altre all'interno della cartella images.
 
 Import all'inizio del codice del component
@@ -41,7 +48,7 @@ Export alla fine.
 - Prima di pushare il codice fare: git pull
 - E infine fare il push con: git push
 
-<!-- ## Colors
+## Colors
 
         grigioTesto: "#868686",
         biancoTesto: "#f6f6f6",
@@ -50,4 +57,4 @@ Export alla fine.
         griginoBg: "#242424",
         verdeSpotify: "#1fdf64",
 
-![alt text](src/images/color_rules.png?raw=true) -->
+![alt text](src/images/color_rules.png?raw=true)

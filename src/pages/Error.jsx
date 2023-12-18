@@ -1,4 +1,5 @@
 import logo from "../images/spotify-logo-no-bg.png";
+import {Link} from "react-router-dom";
 
 function Error (){
     return (
@@ -6,7 +7,7 @@ function Error (){
             <img src={logo} className="w-[60px]" />
             <h1 className="text-biancoTesto text-[48px] font-bold text-center">Pagina non trovata</h1>
             <p className="text-grigioTesto text-[16px] font-semibold">Non riusciamo a trovare la pagina che cerchi.</p>
-            <button className=" bg-biancoTesto text-black p-2 font-bold rounded-full w-[100px]">Home</button>
+            <Link to={"/"} className=" bg-biancoTesto text-black flex justify-center items-center p-2 font-bold rounded-full w-[100px]">Home</Link>
             <button className="text-biancoTesto font-semibold text-[15px]">Assistenza</button>
         </div>
     )

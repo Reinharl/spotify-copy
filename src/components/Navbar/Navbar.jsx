@@ -1,5 +1,6 @@
 import SpotifyLogo from "../../images/spotify-logo.png";
 import {useState} from "react";
+import {Link} from "react-router-dom";
 
 /* eslint-disable react/no-unknown-property */
 function Navbar() {
@@ -70,9 +71,9 @@ function Navbar() {
                 </div>
             </div>
             <div className="hidden md:flex gap-7 pr-10 font-bold text-lg">
-                <button className="bg-[#0f0f0f] text-grigioTesto hover:scale-105 hover:text-biancoTesto">
+                <Link to={"/Iscriviti"} className="bg-[#0f0f0f] text-grigioTesto hover:scale-105 hover:text-biancoTesto py-2">
                     Iscriviti
-                </button>
+                </Link>
                 <button className="bg-white text-black rounded-3xl px-7 py-2 hover:scale-105">
                     Accedi
                 </button>
@@ -114,7 +115,7 @@ function Navbar() {
                 </svg>
 
                 <div
-                    className={isNavOpen ? "showMenuNav text-biancoTesto ml-0" : "hideMenuNav"}
+                    className={isNavOpen ? "showMenuNav text-biancoTesto ml-0 fixed" : "hideMenuNav"}
                 >
                     <div
                         className=" absolute top-0 right-0 px-8 py-8 "
@@ -157,7 +158,6 @@ function Navbar() {
       }
       .showMenuNav {
         display: block;
-        position: absolute;
         width: 100%;
         height: 100vh;
         padding: 32px;

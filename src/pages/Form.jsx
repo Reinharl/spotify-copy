@@ -7,7 +7,7 @@ function Form() {
     <div className="h-[100vh] w-[100%] flex flex-col items-center bg-grigioBg text-biancoTesto ">
       
       <div className="h-[70px] w-[100%] flex justify-start items-center">
-        <img src={logo} className="h-[50px] ml-[40px]" />
+        <img src={logo} alt={"logo spotify"} className="h-[50px] ml-[40px]" />
       </div>
       {/* logo */}
       <div className="h-[550px]  flex flex-col items-center p-2 justify-center">
@@ -32,12 +32,12 @@ function Form() {
           <div className="mt-2 mb-5"> Oppure </div>
 
           <button className="flex gap-5 p-2 bg-grigioBg w-60 rounded-full border-solid border-2 border-grigioTesto  hover:border-white">
-            <img src={google} className="h-[20px]" />
+            <img src={google} alt={"immagine google"} className="h-[20px]" />
             Iscriviti con Google
           </button>
 
           <button className="flex gap-5 p-2 bg-grigioBg w-60 rounded-full mt-2 border-solid border-2 border-grigioTesto  hover:border-white">
-            <img src={facebook} className="h-[20px]" /> Iscriviti con Facebook
+            <img src={facebook} alt={"immagine facebook"} className="h-[20px]" /> Iscriviti con Facebook
           </button>
           <div className="h-[1px] bg-grigioTesto w-60 m-5"></div>
           <div className="flex gap-2">

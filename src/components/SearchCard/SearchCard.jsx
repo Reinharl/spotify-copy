@@ -45,7 +45,7 @@ function SearchCard() {
                     {titolo}
                 </div>
                 <div className="absolute bottom-[-20px] right-[-15px]">
-                    <img src={immagine} className="w-32 rotate-[45deg]"/>
+                    <img src={immagine} alt={"immagine card"} className="w-32 rotate-[45deg]"/>
                 </div>
                 {/* {console.log(`carta ${i+1} , titolo: ${titolo}, colore: ${colore}, immagine: &{immagine}`)};   */} {/* funzionante */}
             </Link>
