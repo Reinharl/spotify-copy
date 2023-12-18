@@ -4,13 +4,13 @@ import facebook from "../images/facebook.png";
 
 function Form() {
   return (
-    <div className="h-[100vh] w-[100%] flex flex-col items-center bg-grigioBg text-biancoTesto">
-      {/* contenitore di tutta la pagina */}
+    <div className="h-[100vh] w-[100%] flex flex-col items-center bg-grigioBg text-biancoTesto ">
+      
       <div className="h-[70px] w-[100%] flex justify-start items-center">
         <img src={logo} className="h-[50px] ml-[40px]" />
       </div>
       {/* logo */}
-      <div className="h-[550px]  flex flex-col items-center p-2 ">
+      <div className="h-[550px]  flex flex-col items-center p-2 justify-center">
         <h1 className="text-[30px] w-[200px] font-bold text-center">
           Iscriviti per iniziare ad ascoltare
         </h1>

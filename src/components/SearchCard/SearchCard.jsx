@@ -38,7 +38,7 @@ function SearchCard() {
       const componente = (
         <div
           key={i}
-          className={`${colore} w-[200px] h-[210px] rounded mb-[10px] relative overflow-hidden`}>
+          className={`${colore} w-[180px] h-[180px] md:w-[200px] md:h-[200px] rounded mb-[10px] relative overflow-hidden `}>
               
           <div className="text-biancoTesto font-bold text-[20px] p-[10px]">
             {titolo}
@@ -57,7 +57,7 @@ function SearchCard() {
         <h1 className="text-biancoTesto text-[40px] font-bold p-5">
           Sfoglia tutto
         </h1>
-        <div className="flex gap-[10px] flex-wrap p-4" >{componenti}</div>
+        <div className="justify-center md:justify-normal flex gap-[10px] flex-wrap p-4 " >{componenti}</div>
       </div>
     );
   }
