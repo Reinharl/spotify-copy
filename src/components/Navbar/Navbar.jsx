@@ -18,7 +18,9 @@ function Navbar() {
     return (
         <header
             className="fixed z-10 w-full md:w-[calc(78%-35px)] bg-nero flex justify-between items-center h-16 px-4 md:px-6 md:pl-10  md:pr-0 md:bg-[#0f0f0f] md:rounded-t-md overflow-hidden">
-            <img src={SpotifyLogo} alt="Spotify-logo" className="md:hidden h-12"/>
+            <Link to={"/"}>
+                <img src={SpotifyLogo} alt="Spotify-logo" className="md:hidden h-12"/>
+            </Link>
             <div className="flex items-center gap-4">
                 <div className="flex items-center gap-4 ">
                     <button onClick={prev}>
@@ -71,7 +73,8 @@ function Navbar() {
                 </div>
             </div>
             <div className="hidden md:flex gap-7 pr-10 font-bold text-lg">
-                <Link to={"/Iscriviti"} className="bg-[#0f0f0f] text-grigioTesto hover:scale-105 hover:text-biancoTesto py-2">
+                <Link to={"/Iscriviti"}
+                      className="bg-[#0f0f0f] text-grigioTesto hover:scale-105 hover:text-biancoTesto py-2">
                     Iscriviti
                 </Link>
                 <button className="bg-white text-black rounded-3xl px-7 py-2 hover:scale-105">
@@ -79,7 +82,7 @@ function Navbar() {
                 </button>
             </div>
 
-            <div className="flex items-center space-x-4 md:hidden">
+            <Link to={"/search"} className="flex items-center space-x-4 md:hidden">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -150,7 +153,7 @@ function Navbar() {
                         <li>Condizioni</li>
                     </ul>
                 </div>
-            </div>
+            </Link>
 
             <style>{`
       .hideMenuNav {

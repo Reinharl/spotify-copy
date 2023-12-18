@@ -58,7 +58,7 @@ function SearchCard() {
             <h1 className="text-biancoTesto text-[40px] font-bold p-5">
                 Sfoglia tutto
             </h1>
-            <div className="flex gap-[10px] flex-wrap p-4">{componenti}</div>
+            <div className="flex justify-center md:justify-start gap-[10px] flex-wrap p-4">{componenti}</div>
         </div>
     );
 }

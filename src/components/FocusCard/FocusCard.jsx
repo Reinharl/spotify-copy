@@ -20,7 +20,7 @@ function FocusCard() {
           Mostra tutto
         </h2> */}
                 </div>
-                <div className="flex flex-wrap  ">
+                <div className="flex justify-center md:justify-start flex-wrap">
                     {/*  MAPPATURA  */}
                     {canzoni.map((item, index) => {
                         console.log("prima del return");
