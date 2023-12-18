@@ -18,7 +18,7 @@ function Navbar() {
     return (
         <header
             className="fixed z-10 w-full md:w-[calc(78%-35px)] bg-nero flex justify-between items-center h-16 px-4 md:px-6 md:pl-10  md:pr-0 md:bg-[#0f0f0f] md:rounded-t-md overflow-hidden">
-            <Link to={"/"}>
+            <Link to={"/"} className={"md:hidden"}>
                 <img src={SpotifyLogo} alt="Spotify-logo" className="md:hidden h-12"/>
             </Link>
             <div className="flex items-center gap-4">
@@ -54,17 +54,19 @@ function Navbar() {
                 </div>
                 <div
                     className="hidden md:flex border-2 rounded-3xl px-4 py-1 h-12 bg-[#2a2a2a] hover:bg-[#3a3a3a] hover:border-sm hover:border-[#4a4a4a]  items-center gap-2 border-transparent focus:border-2 focus:border-white ">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="16"
-                        width="16"
-                        viewBox="0 0 512 512"
-                    >
-                        <path
-                            fill="#f6f6f6"
-                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                        />
-                    </svg>
+                    <Link to={"/search"}>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="16"
+                            width="16"
+                            viewBox="0 0 512 512"
+                        >
+                            <path
+                                fill="#f6f6f6"
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                            />
+                        </svg>
+                    </Link>
                     <input
                         type="text"
                         placeholder="Cosa vuoi ascoltare?"
