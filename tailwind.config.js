@@ -13,6 +13,10 @@ export default {
         verdeSpotify: "#1fdf64",
       },
     },
+    safelist: [
+      "animate-[fade-in-up_1s_ease-in-out]",
+      "animate-[fade-out-down_1s_ease-in-out]",
+    ],
   },
   plugins: [],
 };
